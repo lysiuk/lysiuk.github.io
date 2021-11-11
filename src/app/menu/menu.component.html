@@ -1,1 +1,23 @@
-<p>menu works!</p>
+<nav class="menu">
+  <div class="menu__logo">
+    <div class="menu__logo-icon"></div>
+    <div class="menu__logo-name">Vladimir</div>
+    <div class="menu__logo-pos">Front-end developer</div>
+  </div>
+  <ul class="menu__items">
+    <li class="menu__item" *ngFor="let item of menuItems">
+      <a routerLink="{{item.url}}" class="menu__item-link">
+        <span class="menu__item-icon"></span>
+        <span class="menu__item-name">{{item.name}}</span>
+      </a>
+    </li>
+  </ul>
+  <ul class="menu__links">
+    <li class="menu__link" *ngFor="let link of linksItems">
+      <a href="{{link.url}}" target="_blank">
+        <div class="menu__link-icon" [inlineSVG]="link.iconName"></div>
+        <div class="menu__link-tooltip">{{link.name}}</div>
+      </a>
+    </li>
+  </ul>
+</nav>
