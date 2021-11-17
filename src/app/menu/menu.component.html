@@ -1,13 +1,13 @@
 <nav class="menu">
-  <div class="menu__logo">
-    <div class="menu__logo-icon"></div>
+  <div class="menu__logo" routerLink="/">
+    <div class="menu__logo-icon" [inlineSVG]="'../svg/logo.svg'"></div>
     <div class="menu__logo-name">Vladimir</div>
     <div class="menu__logo-pos">Front-end developer</div>
   </div>
   <ul class="menu__items">
     <li class="menu__item" *ngFor="let item of menuItems">
       <a routerLink="{{item.url}}" class="menu__item-link">
-        <span class="menu__item-icon"></span>
+        <span class="menu__item-icon" [inlineSVG]="item.iconName"></span>
         <span class="menu__item-name">{{item.name}}</span>
       </a>
     </li>

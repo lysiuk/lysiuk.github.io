@@ -15,22 +15,22 @@ export class MenuComponent implements OnInit {
     this.menuItems = [
       {
         url: 'about',
-        iconName: 'about',
+        iconName: '../svg/about.svg',
         name: 'About'
       },
       {
         url: 'experience',
-        iconName: 'experience',
+        iconName: '../svg/experience.svg',
         name: 'Experience'
       },
       {
         url: 'skills',
-        iconName: 'skills',
+        iconName: '../svg/skills.svg',
         name: 'Skills'
       },
       {
         url: 'works',
-        iconName: 'works',
+        iconName: '../svg/works.svg',
         name: 'Works'
       }
     ]
