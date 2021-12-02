@@ -1,0 +1,49 @@
+@import '../../../../assets/scss/vars';
+
+.skills-page {
+  &__items {
+    width: 55%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    width: 100%;
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-name {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__item-progressbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+  }
+
+  &__item-progress {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    height: 2px;
+    transform: translateY(-50%);
+  }
+
+  &__item-bar {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $c-border-skill;
+  }
+}

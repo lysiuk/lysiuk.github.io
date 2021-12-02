@@ -1,1 +1,17 @@
-<p>skills-page works!</p>
+<section class="skills-page">
+  <div class="container">
+    <div class="title">Skills</div>
+    <ul class="skills-page__items">
+      <li class="skills-page__item" *ngFor="let item of skillItems">
+        <span class="skills-page__item-name">{{item.name}}</span>
+        <span class="skills-page__item-progressbar">
+          <span
+            class="skills-page__item-progress"
+            [ngStyle]="{ width: item.percent + '%', backgroundColor: item.color }">
+          </span>
+          <span class="skills-page__item-bar"></span>
+        </span>
+      </li>
+    </ul>
+  </div>
+</section>

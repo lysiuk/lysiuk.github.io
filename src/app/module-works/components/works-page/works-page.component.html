@@ -1,1 +1,9 @@
-<p>works-page works!</p>
+<section class="works-page">
+  <div class="works-page__items">
+    <div class="works-page__item" *ngFor="let item of worksItems">
+      <div class="works-page__item-bg" [ngStyle]="{backgroundImage: 'url(' + item.iconName + ')' }"></div>
+      <div class="works-page__item-overlay"></div>
+      <button type="button" class="works-page__item-btn">view project</button>
+    </div>
+  </div>
+</section>

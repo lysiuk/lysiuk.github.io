@@ -68,7 +68,8 @@
     color: $c-txt;
     text-decoration: none;
     transition: all .3s;
-    &:hover {
+    &:hover,
+    &--active {
       color: $c-hover;
       transition: all .3s;
 

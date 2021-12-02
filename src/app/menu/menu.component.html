@@ -6,7 +6,7 @@
   </div>
   <ul class="menu__items">
     <li class="menu__item" *ngFor="let item of menuItems">
-      <a routerLink="{{item.url}}" class="menu__item-link">
+      <a routerLink="{{item.url}}" class="menu__item-link" routerLinkActive="menu__item-link--active">
         <span class="menu__item-icon" [inlineSVG]="item.iconName"></span>
         <span class="menu__item-name">{{item.name}}</span>
       </a>

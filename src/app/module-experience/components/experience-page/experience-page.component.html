@@ -1,1 +1,15 @@
-<p>experience-page works!</p>
+<section class="experience-page">
+  <div class="container">
+    <div class="title">Experience</div>
+    <ul class="experience-page__items">
+      <li class="experience-page__item" *ngFor="let expItem of expItems">
+        <span class="experience-page__item-title">{{expItem.position}}</span>
+        <span class="experience-page__item-name">{{expItem.company}}</span>
+        <span class="experience-page__item-date">{{expItem.date}}</span>
+        <ul class="experience-page__item-about">
+          <li *ngFor="let item of expItem.about">{{item}}</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>

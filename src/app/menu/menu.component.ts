@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { IMenuItem } from '../interfaces/menu.interface';
 
 @Component({
@@ -7,7 +7,7 @@ import { IMenuItem } from '../interfaces/menu.interface';
   styleUrls: ['./menu.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent {
   menuItems: IMenuItem[] = [];
   linksItems: IMenuItem[] = [];
 
@@ -53,6 +53,4 @@ export class MenuComponent implements OnInit {
       }
     ]
   }
-
-  ngOnInit(): void {}
 }
