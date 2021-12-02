@@ -20,8 +20,21 @@ body {
   color: $c-txt;
 }
 
+.container {
+  padding: 130px 80px;
+}
+
+.title {
+  margin-bottom: 72px;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 100px;
+  color: $c-title;
+}
+
 .menu__item-link {
-  &:hover {
+  &:hover,
+  &--active {
     g,
     path {
       fill: $c-menu-icon-active;
@@ -47,6 +60,7 @@ body {
   }
 }
 
+.main-page__logo svg,
 .menu__link-icon svg {
   width: 100%;
   height: 100%;
