@@ -124,7 +124,7 @@
       transition: all .3s;
       &:hover {
         .menu__link-tooltip {
-          top: -15px;
+          top: -36px;
           opacity: 1;
           transition: all .3s;
         }
@@ -139,14 +139,32 @@
 
   &__link-tooltip {
     position: absolute;
-    top: 0;
+    top: -16px;
     left: 50%;
-    width: 40px;
-    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 24px;
     border-radius: 100px;
     background-color: $c-white;
+    font-size: 12px;
+    line-height: 12px;
+    color: $c-black;
     opacity: 0;
+    pointer-events: none;
     transform: translateX(-50%);
     transition: all .3s;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: $c-white;
+      transform: translate(-50%, 0) rotate(45deg);
+    }
   }
 }

@@ -35,13 +35,13 @@ export class ExperiencePageComponent {
       date: 'november 2020 - july 2021',
       about: [
         'Fix bugs in admin panel',
-        'Implement ne features',
+        'Implement new features',
         'Developing web application'
       ]
     },
     {
       position: 'Front-end dev (Angular)',
-      company: 'SvitSoft',
+      company: 'SvitSoftware (SvitSoft)',
       date: 'may 2019 - present',
       about: [
         'Develops and implements solutions',

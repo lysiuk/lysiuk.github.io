@@ -20,10 +20,10 @@ const routes: Routes = [
     path: 'skills',
     loadChildren: async () => ((await import('./module-skills/skills.module')).SkillsModule)
   },
-  {
-    path: 'works',
-    loadChildren: async () => ((await import('./module-works/works.module')).WorksModule)
-  },
+  // {
+  //   path: 'works',
+  //   loadChildren: async () => ((await import('./module-works/works.module')).WorksModule)
+  // },
   {
     path: '**',
     loadChildren: async () => ((await import('./module-not-found/not-found.module')).NotFoundModule)

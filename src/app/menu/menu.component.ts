@@ -28,11 +28,11 @@ export class MenuComponent {
         iconName: '../svg/skills.svg',
         name: 'Skills'
       },
-      {
-        url: 'works',
-        iconName: '../svg/works.svg',
-        name: 'Works'
-      }
+      // {
+      //   url: 'works',
+      //   iconName: '../svg/works.svg',
+      //   name: 'Works'
+      // }
     ]
 
     this.linksItems = [
