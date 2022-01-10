@@ -10,23 +10,13 @@ import { IExperienceItem } from '../../../interfaces/experience-item.interface';
 export class ExperiencePageComponent {
   expItems: IExperienceItem[] = [
     {
-      position: 'Html-coder',
-      company: 'Apelsun WebStudio',
-      date: 'may 2017 - june 2018',
+      position: 'Front-end dev (Angular)',
+      company: 'SvitSoftware (SvitSoft)',
+      date: 'may 2019 - present',
       about: [
-        'Create sites on CMS Joomla',
-        'Editing CMS modules',
-        'Markup from PSD/Figma layouts to html'
-      ]
-    },
-    {
-      position: 'Html-coder',
-      company: 'SvitSoft',
-      date: 'july 2018 - may 2019',
-      about: [
-        'Create markup of different difficulties',
-        'Editing Angular components',
-        'Create different animations'
+        'Develops and implements solutions',
+        'Implement different services, models and components',
+        'Developing and Administer the new Angular based website'
       ]
     },
     {
@@ -40,13 +30,23 @@ export class ExperiencePageComponent {
       ]
     },
     {
-      position: 'Front-end dev (Angular)',
-      company: 'SvitSoftware (SvitSoft)',
-      date: 'may 2019 - present',
+      position: 'Html-coder',
+      company: 'SvitSoft',
+      date: 'july 2018 - may 2019',
       about: [
-        'Develops and implements solutions',
-        'Implement different services, models and components',
-        'Developing and Administer the new Angular based website'
+        'Create markup of different difficulties',
+        'Editing Angular components',
+        'Create different animations'
+      ]
+    },
+    {
+      position: 'Html-coder',
+      company: 'Apelsun WebStudio',
+      date: 'may 2017 - june 2018',
+      about: [
+        'Create sites on CMS Joomla',
+        'Editing CMS modules',
+        'Markup from PSD/Figma layouts to html'
       ]
     }
   ];
