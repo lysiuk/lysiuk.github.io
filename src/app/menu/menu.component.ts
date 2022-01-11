@@ -47,7 +47,7 @@ export class MenuComponent {
         name: 'E-mail'
       },
       {
-        url: 'https://drive.google.com/open?id=1F6YrEqv89Klaevne4gzquOGPytOJMnxw',
+        url: 'https://drive.google.com/file/d/1LGDV23Y8yuz29fKzOQhSz4qQCBXZJPEj/view?usp=sharing',
         iconName: '../svg/cv.svg',
         name: 'Resume'
       }
